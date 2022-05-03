@@ -66,7 +66,6 @@ function player1() {
             rollNo1.innerHTML = 0
             total1.innerHTML = 0
             document.getElementById('showText').innerHTML ='Oh No!\nPlayer 1 Rolled a 1!\nPlayer 1 resets'
-            document.getElementById('roll2').disabled = false
             return player2()
         }
         document.getElementById('hold1').disabled = false
@@ -94,7 +93,6 @@ function player2() {
             rollNo2.innerHTML = 0
             total2.innerHTML = 0
             document.getElementById('showText').innerHTML ='Oh No!\nPlayer 2 Rolled a 1!\nPlayer 2 resets'
-            document.getElementById('roll1').disabled = false
             return player1()
         }
         document.getElementById('hold2').disabled = false
