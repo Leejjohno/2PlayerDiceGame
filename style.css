@@ -1,0 +1,217 @@
+
+body {
+    /* background: linear-gradient(to right, orange, orangered); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 30px;
+    font-family: monospace;
+}
+#turnCounter {
+    font-size: 70px;
+    
+}
+/* This is the start button and its hover element */
+#startButton {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow:  4px 4px orange;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: width 1s, height 1s;
+    transition: 1s ease-in-out
+}
+#startbutton:hover{
+    background-color: lightsalmon;
+    box-shadow: 8px 8px 8px orangered;
+}
+#roll1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow:  4px 4px orange;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: width 1s, height 1s;
+    transition: 1s ease-in-out;
+}
+#roll1:hover{
+    background-color: lightsalmon;
+    box-shadow: 8px 8px 8px orangered;
+    /* transform: translate3d(0, 50px, 0) rotate3d(0,0,1,360deg); */
+}
+#hold1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow:  4px 4px orange;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: width 1s, height 1s;
+    transition: 1s ease-in-out;
+}
+#hold1:hover{
+    background-color: lightsalmon;
+    box-shadow: 8px 8px 8px orangered;
+}
+#roll2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow:  4px 4px orange;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: width 1s, height 1s;
+    transition: 1s ease-in-out;
+}
+#roll2:hover{
+    background-color: lightsalmon;
+    box-shadow: 8px 8px 8px orangered;
+    /* transform: translate3d(0, 50px, 0) rotate3d(0,0,1,360deg); */
+}
+#hold2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow:  4px 4px orange;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: width 1s, height 1s;
+    transition: 1s ease-in-out;
+}
+#hold2:hover{
+    background-color: lightsalmon;
+    box-shadow: 8px 8px 8px orangered;
+}
+#playerBox {
+    display: flex;
+    direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* This is the player 1 dice */
+
+.dice1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: solid orange 3px;
+    margin: 50px;
+}
+
+/* player 2 dice */
+
+.dice2 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: solid orange 3px;
+    margin: 50px;
+}
+
+/* This is the reset button which is only visible when the game is over */
+
+/* #reset {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    margin: 50px;
+    height: 200px;
+    width: 500px;
+    border-radius: 40px;
+    box-shadow:  4px 4px orange;
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    transition: width 1s, height 1s;
+    transition: 1s ease-in-out;
+} */
+
+/* This is the readout container */
+
+#readoutContainer {
+    display: inline-grid;
+    grid-area: start;
+    border: solid orange 5px;
+    border-radius: 25px;
+    justify-content: center;
+    height: 500px;
+    width: 600px;
+    margin: 20px;
+    box-shadow: 10px 10px darkred;
+    border: solid 2px red;
+}
+
+/* This is the readout box */
+
+/* #boxes {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border: solid 3px darkgoldenrod;
+    border-radius: 30px;
+    background-color: beige;
+} */
+
+#rollNo1 {
+    height: 100px;
+    width: 100px;
+    /* font-size: 30px;
+    font-family: monospace; */
+    /* border: solid 2px red; */
+}
+#total1 {
+    height: 100px;
+    width: 100px;
+    /* font-size: 30px;
+    font-family: monospace; */
+    /* border: solid 2px red; */
+
+}
+#rollNo2 {
+    height: 100px;
+    width: 100px;
+    /* font-size: 30px;
+    font-family: monospace; */
+    /* border: solid 2px red; */
+
+}
+#total2 {
+    height: 100px;
+    width: 100px;
+    /* font-size: 30px;
+    font-family: monospace; */
+    /* border: solid 2px red; */
+
+}
+/* The two readout boxes within the #boxes element are above,
+ the class for them is below */
+
+.ticker {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    height: fit-content;
+    width: 500px;
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    border: solid 2px red;
+    background-color: beige;
+    border-radius: 30px;
+}

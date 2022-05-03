@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dice Roll</title>
+</head>
+<body>
+    <button id='startButton'>Start</button>
+<div id="playerBox">
+    
+    <div class="player">
+        <p>Player 1</p>
+        <button id="roll1">Roll!</button>
+        <button id="hold1">Hold!</button>
+        </div>
+    <div class="player">Turn
+        <p id="turnCounter"></p>
+        <img class='dice1' height='100px' width='100px'>
+        </div>
+    <div class="player">
+        <p>Player 2</p>
+        <button id="hold2">Hold!</button> 
+        <button id="roll2">Roll!</button>
+        </div>
+</div>
+<div id='showText'>Press Start to begin</div>
+
+    <div id="readoutContainer">
+
+        <div class="ticker">
+            <p id="rollNo1"></p>
+                :Current Roll:
+            <p id="rollNo2"></p>
+        </div>
+        
+        <div class="ticker">
+            <p id="total1"></p>
+                :Total:
+            <p id="total2"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
