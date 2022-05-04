@@ -67,20 +67,23 @@ function player1() {
             total1.innerHTML = 0
             document.getElementById('showText').innerHTML ='Oh No!\nPlayer 1 Rolled a 1!\nPlayer 1 resets'
             return player2()
-        }
-        document.getElementById('hold1').disabled = false
-        document.getElementById('hold1').addEventListener('click', () => {
-                total1.innerHTML = + total1.innerHTML + no1
-                no1 = 0
+        } else {
+            document.getElementById('hold1').disabled = false
+            document.getElementById('hold1').addEventListener('click', () => {
                 document.getElementById('roll1').disabled = true
                 document.getElementById('hold1').disabled = true
+                total1.innerHTML = + total1.innerHTML + no1
+                no1 = 0
                 if (total1.innerHTML >= 20) {
                     gameReset()
-                    document.getElementById('showText').innerHTML =('Player 1 Wins!')
-                } player2()
+                    document.getElementById('showText').innerHTML ='Player 1 Wins!'
+                } else { 
+                    return player2()
+                }
             })
-        })
-    }             
+        }
+    })
+}             
 // This is the function for player 1 to hold the value of the dice roll
 function player2() {
     document.getElementById('roll1').disabled = true
@@ -90,24 +93,27 @@ function player2() {
         no2 = diceRoll2()
         if (rollNo2.innerHTML == 1) {
             no2 = 0
-            rollNo2.innerHTML = 0
-            total2.innerHTML = 0
+            rollNo2.innerHTML = "0"
+            total2.innerHTML = "0"
             document.getElementById('showText').innerHTML ='Oh No!\nPlayer 2 Rolled a 1!\nPlayer 2 resets'
             return player1()
-        }
-        document.getElementById('hold2').disabled = false
-        document.getElementById('hold2').addEventListener('click', () => {
+        } else {
+            document.getElementById('hold2').disabled = false
+            document.getElementById('hold2').addEventListener('click', () => {
                 total2.innerHTML = + total2.innerHTML + no2
-                no2 = 0
                 document.getElementById('roll2').disabled = true
                 document.getElementById('hold2').disabled = true
+                no2 = 0
                 if (total1.innerHTML >= 20) {
                     gameReset()
                     document.getElementById('showText').innerHTML ='Player 2 Wins!'
-                } player1()
+                } else {
+                    return player1()
+                }
             })
-        })
-    }
+        }
+    })
+}
 
 gameReset()
 game()
